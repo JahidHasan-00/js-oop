@@ -23,3 +23,41 @@ const p3 = new Person('Junayed', 'junayed@gmail.com')
 console.log(p1)
 console.log(p2)
 console.log(p3)
+
+
+//Library Object:
+class Library {
+
+    //constructor function:
+    constructor(name, email) {
+        this.name = name
+        this.email = email
+    }
+
+    //changeName Method:
+    changeName(name) {
+        this.name = name
+    }
+
+    //send email Method:
+    sendEmail(msg) {
+        console.log('To', this.email)
+        console.log('Sending Email')
+        console.log('msg', msg)
+    }
+
+    //Print Method:
+    print() {
+        console.log(this)
+    }
+
+}
+const lib1 = new Library('knowledge House', 'knowledgehouse@gmail.com')
+const lib2 = new Library('Candle Library', 'candle@gmail.com')
+
+lib1.print()
+lib2.print()
+
+//change name of lib1
+lib1.changeName('Future knowledge House')
+lib1.print()
