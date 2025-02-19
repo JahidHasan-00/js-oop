@@ -76,3 +76,19 @@ function increase(obj){
 }
 increase(obj);
 console.log(obj); //11
+
+
+/**Adding and Removing Properties:
+ * We can add and remove properties from an object.
+ */
+
+function VisitCountry(country){
+    this.name = country;
+    this.visited = false;
+
+}
+const country = new VisitCountry('Bangladesh');
+country.numberOfCities = 64;
+const nearestCountry = 'country-name';
+country['nearest-Country'] = 'Pakistan';
+console.log(country);
