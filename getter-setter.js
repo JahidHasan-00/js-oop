@@ -4,6 +4,10 @@
  */
 
 class Person {
+    //Static Values:
+    static name = 'Jhon Doe';
+    static PI = 3.1416;
+
     constructor(name, email) {
         this._name = name
         this._email = email
@@ -32,7 +36,19 @@ class Person {
 }
 
 const p1 = new Person('Jahid','jahid.hasan@gmail.com')
+const p2 = new Person('Abdullah', 'abdullah@gmail.com')
+const p3 = new Person('Mr. Abadal', 'abdl@gmail.com')
+const p6 = new Person('Mr. Abadal', 'abdl@gmail.com')
 
-p1.email = 'jahid@gmail.com'
-console.log(p1.email)
+const p4 = {_name:'Lasith', _email: 'las@gmail.com'}
+
+console.log(p1 instanceof Person) //true : p1 is an instance of (Person) class
+console.log(p4 instanceof Person) //false : p4 is not an instance
+
+console.log(p1.name)
 p1.print()
+
+console.log(Person.name)
+console.log(Person.PI)
+
+
