@@ -31,8 +31,5 @@ class Teacher {
 
 }
 
-const teacher = new Teacher('Computer Science', 30000)
-teacher.print()
-
 //Exports:
 module.exports = Teacher

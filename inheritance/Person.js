@@ -44,7 +44,4 @@ class Person {
 
 }
 
-const p1 = new Person('jahid', 'jahid@gmail.com')
-const p2 = new Person('Abdullah', 'abdullah@gmail.com')
-
 module.exports = Person

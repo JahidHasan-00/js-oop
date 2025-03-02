@@ -1,6 +1,8 @@
+const Person = require('./Person')
 
-class Student {
-    constructor(subjects, tuitionFee) {
+class Student extends Person {
+    constructor(name, email, subjects, tuitionFee) {
+        super(name, email)
         this._subjects = subjects
         this._tuitionFee = tuitionFee
     }
@@ -35,7 +37,5 @@ class Student {
     
 }
 
-const student = new Student(['Math', 'Physics', 'English', 'DSA'], 400000)
-student.print()
-
+//Exports:
 module.exports = Student
