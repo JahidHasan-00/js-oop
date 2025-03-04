@@ -1,7 +1,9 @@
+const Person = require('./Person.js')
 
-class Teacher {
-    constructor(subject, salary) {
-        this._subject = subject
+class Teacher extends Person {
+    constructor(name, email, subject, salary) {
+        super(name, email)
+        this._subject = subject 
         this._salary = salary
     }
 
@@ -26,7 +28,7 @@ class Teacher {
     }
 
     print() {
-        console.log(this)
+        console.log(`Subject: ${this._subject}, Salary: ${this._salary}`)
     }
 
 }

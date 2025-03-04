@@ -28,7 +28,8 @@ class Student extends Person {
     }
 
     print() {
-        console.log(this)
+        super.print()
+        console.log(`Subjects: ${this._subjects}, Fee: ${this._tuitionFee}`)
     }
 
     static isValid(age) {

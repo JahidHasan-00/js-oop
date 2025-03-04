@@ -28,7 +28,7 @@ class Person {
     }
 
     print() {
-        console.log(this)
+        console.log(`Name: ${this._name}, Email: ${this._email}`)
     }
     
     static isValid(age) {
